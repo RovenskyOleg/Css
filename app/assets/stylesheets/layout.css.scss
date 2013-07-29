@@ -71,9 +71,8 @@ h1{
 }
 
 .info-JS{
-  .wrapper{
     @include outerRow;
-  }
+  
 }
 .conteiner-JS{
   @include column(6);
