@@ -7,4 +7,21 @@
   = javascript_include_tag "application", "data-turbolinks-track" => true
   = csrf_meta_tags
 %body
-  = yield
+  %header
+    .wrapper
+      #small-logo
+        .img
+      #menu
+        %nav
+          %a{href: "#"}="Home"
+          %a.active{href: "#"}="Ruby/RoR Course"
+          %a{href: "#"}="JS Course"  
+          %a{href: "#"}="Coaches"          
+  #content
+    = yield
+  //#clear
+  %footer
+    .wrapper
+      %dl
+      %dt contact: info@rubygarage.org
+      %dd &copy; 2012-2013 RubyGarage 

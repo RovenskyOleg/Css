@@ -1,0 +1,30 @@
+$deco-block-size: 100px;
+
+@mixin deco-square($size: $deco-block-size) {
+  width: 100px;
+  height: 100px;
+  @include inline-block;
+  position: absolute;
+}
+
+/*.deco-block-1 {
+  @include deco-square;
+  bottom: 0;
+  left: -$deco-block-size - $columnGutter;
+}*//*
+.block-dicorate-2{
+  @include deco-square;
+  background-color: $orange;
+  position:absolute;
+  right: 103px;
+}
+.block-dicorate-3{
+  background-color: $orange;
+  position:absolute;
+  top: 103px;
+}
+.block-dicorate-4{
+  background-color: #cd8376;
+  position:absolute;
+  right: -103px;
+}*/

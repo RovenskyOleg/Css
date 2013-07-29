@@ -1,0 +1,24 @@
+footer {
+  margin-top: 126px; 
+  font-weight: 600;
+  color: white;
+  background-color: $green;
+  border-top: 3px $orange solid;
+  padding: 20px 80px 20px 80px;
+  .wrapper{
+    @include outerRow;
+  } 
+}
+dt {
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  clear: both;
+}
+dd {
+  text-align: right;
+  width: 49%;
+  vertical-align: top;
+  display: inline-block;
+  clear: both;
+}

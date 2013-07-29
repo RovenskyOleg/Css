@@ -1,0 +1,17 @@
+#big-logo{
+  .img {
+    /*position: relative;
+    left: 37%;*/
+    background-image: image-url("big-logo.png");
+    width: 296px;
+    height: 206px;
+    margin: 80px 0 40px 5px;
+    @include inline-block;
+  }
+  h1 {
+    @include padding-leader;
+    @include padding-trailer;
+    text-align: center; 
+    margin: 50;    
+  }
+}

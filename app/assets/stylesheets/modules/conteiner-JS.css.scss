@@ -1,0 +1,42 @@
+
+.conteiner-JS{
+  .input-JS{
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    height: 514px;
+    display: inline-block;
+    background-color: $green;
+    margin-right: 3px;
+    border-bottom: 3px $orange solid;
+  }
+  p{
+    padding: 25px;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .con{
+    background-color: $violet-new;
+    height: 303px;
+    width: 480px;
+    border-bottom: 3px $volna solid;
+    margin-top: 5px;
+  }
+}
+.description-JS{
+  @include column(6);
+  background-color: $orange;
+  width: 480px; 
+  height: 617px; 
+  color: white;
+  border-bottom: 3px $green solid;
+  p{
+    padding: 25px 50px 0 25px;
+  }
+  dl{
+   padding: 5px 50px 20px 25px;
+  } 
+}

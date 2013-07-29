@@ -1,0 +1,16 @@
+nav {
+  a {
+    @include inline-block;
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px; 
+    color:#333;
+    text-decoration: none;
+    @include padding-leader;
+    @include padding-trailer;
+    &:hover, &.active{
+      background-color: $orange;
+      color: #fff;
+    }
+  }
+}

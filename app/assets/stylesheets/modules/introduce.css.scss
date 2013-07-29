@@ -1,0 +1,15 @@
+#photo{
+  margin: 0;
+  padding: 0;
+  .img{
+  background-image: image-url("pic.png");
+  min-width: 641px;
+  min-height: 435px;
+  }
+}
+.text{
+  background-color: $orange;
+  min-height: 435px;
+  padding: 25px 10px 25px 10px;
+  
+}

@@ -2,10 +2,27 @@
 @import "foundation-grid";
 @import "fonts";
 
-@include global-reset;
+$violet: #9189ff;
+$violet-new: #7500a7;
+$orange: #e05d41;
+$green: #7aa700;
+$volna: #65e6c9;
 
-#hello {
-  font-family: "Raleway";
-  margin-top: 40px;
-  text-align: center;
-}
+$rowWidth: 960px;
+$columnGutter: 3px;
+$totalColumns: 12;
+
+$base-font-size: 14px;
+$base-font-height: 20px;
+
+@include global-reset;
+@include establish-baseline;
+
+@import "layout";
+@import "modules/nav";
+@import "modules/big-logo";
+@import "modules/footer";
+@import "modules/introduce";
+@import "modules/conteiner";
+@import "modules/conteiner-JS";
+@import "modules/mixin-block-decor-1";
