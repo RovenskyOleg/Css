@@ -9,6 +9,9 @@
     @include inline-block;
   }
   h1 {
+    /*font-family: Raleway, "Helvetica Neue";
+    font-size: 40px;
+    font-weight: 200;*/
     @include padding-leader;
     @include padding-trailer;
     text-align: center; 

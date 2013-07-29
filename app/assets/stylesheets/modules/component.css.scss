@@ -1,4 +1,4 @@
-.component{
+/*.component{
   width: 100%;
   height: 100%;
   background-color: $#7CFC00; 
@@ -19,4 +19,13 @@
     outline: none;
   }
 }
+}*/
+.participation-form {
+  &.hidden {
+    
+  }
+  &.open {
+    
+  }
 }
+
