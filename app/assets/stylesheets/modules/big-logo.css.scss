@@ -1,0 +1,24 @@
+.logo{
+    @include outerRow;
+  } 
+  #big-logo{
+    @include column(4);
+    @include push(4);
+    .img {
+      background-image: image-url("big-logo.png");
+      height: 206px;
+      margin: 0 auto;
+      display: block;
+      @include margin-leader(2.5); 
+    }
+  }
+  .title-little{
+    h2 {
+      display: block;
+      @include push(2);
+      @include column(10);
+      @include adjust-font-size-to(40px, 2);
+      font-family: Raleway, "Helvetica Neue";
+      @include padding-leader;
+    } 
+  }

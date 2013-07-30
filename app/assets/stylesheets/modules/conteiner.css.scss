@@ -1,81 +1,108 @@
-
-.conteiner{
-  .input{
-    display: inline-block;
-    background-color: $green;
-    margin: 0;
-    padding: 0;
-    height: 470px; 
-    width: 473px;
-    border-bottom: 3px $orange solid;
+.infoRoR{
+  @include outerRow;
   }
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+    .title{
+      @include margin-leader(5);
+      @include padding-trailer(3);
+    }
+      h2{
+        text-align: center;
+        font-family: Raleway, "Helvetica Neue";
+        font-size: 40px;
+        font-weight: medium;
+        color: $orange; 
+      }
+  .container{
+    @include column(6, collapse);
+    padding-right: 3px;
+    .text-block{
+      min-height: 460px;
+      display: block;
+      background-color: $green;
+      border-bottom: 3px $orange solid; 
+      margin-bottom: 3px;
+      p{
+        padding-left: 40px;
+        padding-right: 40px;
+        @include rhythm($padding-leader: 1.5, $padding-trailer: 2);
+        @include adjust-font-size-to(20px, $lines: 1.29);
+        font-family: Raleway, "Helvetica Neue";
+      }
+    }
+    .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .con{
+      background-color: $violet-new;
+      border-bottom: 3px $volna solid;
+      color: white;
+      min-height: 177px;
+    }
+      .img{
+        display: block;
+        background-image: image-url("apply.png");
+        width: 69px;
+        height: 69px;
+        margin-left: auto;
+        margin-right: auto; 
+      }
   }
-  .con{
-    position: relative;
-    background-color: $violet-new;
-    min-height: 180px;
-    width: 473px;
-    margin-top: 3px;
-    border-bottom: 3px $volna solid;
-    color: white;
+  .container-description{
+    @include column(6, collapse);
+    .description{
+      max-height: 660px;
+      background-color: $orange;
+      color: white;
+      border-bottom: 3px $green solid;
+      font-family: Raleway, "Helvetica Neue";
+      @include adjust-font-size-to(20px, $lines: 1.1);
+      padding-left: 40px;
+      padding-right: 60px;
+      p{
+       @include rhythm($padding-leader: 1.5, $padding-trailer: 0);
+     }
+      .text-programm{
+        @include rhythm($padding-leader: 1, $padding-trailer: 3);
+        dt{
+          width: 100%;
+          @include adjust-leading-to(1.2);
+          @include padding-leader(0);
+        }
+      }  
+    }
   }
-  .img{
-    display: block;
-    background-image: image-url("apply.png");
-    width: 69px;
-    height: 69px;
-    margin-left: auto;
-    margin-right: auto; 
+    .block-dicorate-1 {
+      //@include inline-block;
+      background-color: $orange;
+      position:absolute;
+      height: 100px;
+      width: 100px;
+      bottom: 0;
+      left: -103px;
+    }
+  .block-dicorate-2{
+    background-color: $orange;
+    position:absolute;
+    height: 100px;
+    width: 100px;
+    right: -103px;
+    top:0px;
   }
-  p{
-    padding: 25px;
-  }
-}
-.description{
-  background-color: $orange;
-  margin-left: 10px;
-  width: 470px; 
-  min-height: 657px; 
-  color: white;
-  border-bottom: 3px $green solid;
-  p{
-    padding: 25px 50px 0 25px;
-  }
-  dl{
-     padding: 5px 50px 20px 25px;
-  }
-}
-.block-dicorate-1 {
-  @include inline-block;
-  background-color: $orange;
-  position:absolute;
-  height: 100px;
-  width: 100px;
-  bottom: 0;
-  left: -103px;
-}
-.block-dicorate-2{
-  background-color: $orange;
-  position:absolute;
-  height: 100px;
-  width: 100px;
-  right: 103px;
-}
-.block-dicorate-3{
-  background-color: $orange;
-  position:absolute;
-  top: 103px;
-  height: 100px;
-  width: 100px;
-}
-.block-dicorate-4{
-  background-color: #cd8376;
-  position:absolute;
-  height: 100px;
-  width: 100px;
-  right: -103px;
-}
+    .block-dicorate-3{
+      background-color: $orange;
+      position:absolute;
+      top: 103px;
+      height: 100px;
+      width: 100px;
+      right: -103px;
+    }
+    .block-dicorate-4{
+      background-color: $light-orange;
+      position:absolute;
+      height: 100px;
+      width: 100px;
+      right: -206px;
+      top:0px;
+    }

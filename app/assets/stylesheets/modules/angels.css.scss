@@ -1,0 +1,32 @@
+.angels{
+    @include outerRow;
+  }
+  .title-angels{
+    @include margin-leader(3.5); 
+  }
+  .conteiner-ang-1{
+    #ang-1{
+      @include column(4);
+    }
+    .img1{
+      background-image: image-url("ang-1.png");
+      width: 315px;
+      height: 315px;
+    }  
+    #ang-2{ 
+      @include column(4);
+    }
+    .img2{
+      background-image: image-url("ang-2.png");
+      width: 315px;
+      height: 315px;
+    }
+    #ang-3{ 
+      @include column(4);
+    }
+    .img3{
+      background-image: image-url("ang-3.png");
+      width: 315px;
+      height: 315px;
+    }
+  }

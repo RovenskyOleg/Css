@@ -5,15 +5,16 @@
 $violet: #9189ff;
 $violet-new: #7500a7;
 $orange: #e05d41;
+$light-orange: #cd8376;
 $green: #7aa700;
-$volna: #65e6c9;
+$volna: #0cf389;
 
 $rowWidth: 960px;
 $columnGutter: 3px;
 $totalColumns: 12;
 
 $base-font-size: 14px;
-$base-font-height: 20px;
+$base-line-height: 20px;
 
 @include global-reset;
 @include establish-baseline;
@@ -25,4 +26,5 @@ $base-font-height: 20px;
 @import "modules/introduce";
 @import "modules/conteiner";
 @import "modules/conteiner-JS";
+@import "modules/angels";
 @import "modules/mixin-block-decor-1";

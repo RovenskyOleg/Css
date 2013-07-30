@@ -16,7 +16,7 @@ header{
     background-image: image-url("logo_small.png");
     width: 195px;
     height: 41px;
-    margin: 20px 8px 0;
+    margin: 10px 8px 0;
   }
 }
 #menu{
@@ -25,89 +25,23 @@ header{
 /*#clear {
 clear:both;
 }*/
-.font{
-  background-image: image-url("background.png");
-  width: auto;
-  height: auto;
-}
-.logo{
-  @include outerRow;
-}
+#content{
+  background: image-url("background.png") no-repeat;
+  @include background-size(100% auto);
 
-#big-logo{
-  @include column(4);
-  @include push(4);
 }
+  //@import 'modules/big-logo'; 
+  .big-logo{}
 
-.introduce{  
-  @include outerRow;
-  border-bottom: 3px $green solid;
-}
-#photo{
-  @include column(8);
-}
-.text{
-  @include column(4);
-}
-.dop-cont{
-  width: auto;
-  height: 60px;
-}
+  .introduce{}  
 
-.infoRoR{
-  @include outerRow;
-}
-.title{
-  margin-top: 40px;
-}
-h1{
-  text-align: center;
-}
-.conteiner{
-  @include column(6);
-}
-.description{
-  @include column(6);
-}
+  .infoRoR{}
 
-.info-JS{
-    @include outerRow;
-  
-}
-.conteiner-JS{
-  @include column(6);
-}
-
-.angels{
-  @include outerRow;
-}
-
-.conteiner-ang-1{
-  #ang-1{
-    @include column(4);
+  .info-JS{
+    @include outerRow;  
   }
-  .img1{
-    background-image: image-url("ang-1.png");
-    width: 315px;
-    height: 315px;
-  }  
-  #ang-2{ 
-    @include column(4);
-  }
-  .img2{
-    background-image: image-url("ang-2.png");
-    width: 315px;
-    height: 315px;
-  }
-  #ang-3{ 
-    @include column(4);
-  }
-  .img3{
-    background-image: image-url("ang-3.png");
-    width: 315px;
-    height: 315px;
-  }
-}
+    .container{
+      //@include column(6);
+    }
 
-
-
+  .angels{}

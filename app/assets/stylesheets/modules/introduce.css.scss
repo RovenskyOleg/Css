@@ -1,15 +1,25 @@
-#photo{
-  margin: 0;
-  padding: 0;
-  .img{
-  background-image: image-url("pic.png");
-  min-width: 641px;
-  min-height: 435px;
+.introduce{  
+    @include outerRow;
+    @include margin-leader(3); 
+    border-bottom: 3px $green solid;
   }
-}
-.text{
-  background-color: $orange;
-  min-height: 435px;
-  padding: 25px 10px 25px 10px;
-  
-}
+  #photo{
+    @include column(12, collapse);
+    background-color: #00BFFF;
+    .img{
+      @include column(8);
+      background-image: image-url("pic-intro.png");
+      min-height: 438px;
+    }
+    .text{
+      @include column(4);
+      background-color: $orange;
+      font-family: Raleway, "Helvetica Neue";
+      @include adjust-font-size-to(22px, $lines: 1.27);
+      color: white;
+      min-height: 436px;
+      p{
+        @include rhythm($padding-leader: 1, $padding-trailer: 1);
+      }
+    }
+  }
