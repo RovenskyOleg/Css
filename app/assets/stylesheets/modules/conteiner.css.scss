@@ -59,7 +59,7 @@
           font-family: Raleway, "Helvetica Neue";
           font-weight: 100;
           @include adjust-font-size-to(25px, $lines: 1.3);
-          @include padding-trailer(0.5);
+          @include padding-trailer(0.4);
         }
         input#go {
           @include push(5);
@@ -137,11 +137,11 @@
     .block-dicorate-7 {
       @include size-deco-block(100px, 100px, $green);
       bottom: -103px;
-      left: 1px;
+      left: 2px;
     }
     .block-dicorate-8 {
       @include size-deco-block(100px, 100px, $green);
       bottom: -206px;
-      left: 1px;
+      left: 2px;
     }
   

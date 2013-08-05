@@ -29,7 +29,7 @@ clear:both;
   background: image-url("background.png") no-repeat;
   @include background-size(100% auto);
   overflow: hidden;
-  *:before, *:after {
+  *,*:before, *:after {
   @include box-sizing(border-box);
   }
 }
