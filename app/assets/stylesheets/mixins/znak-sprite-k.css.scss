@@ -2,6 +2,10 @@
   .znak-sprite-k {
     display: inline-block;
     z-index: 2;
+    top: 16px;
+    left:100%;
+    position: absolute;
+    background-color: $background-color;
     width: 16px;
     height: 23px;
     @include znak-sprite-sprites(k);

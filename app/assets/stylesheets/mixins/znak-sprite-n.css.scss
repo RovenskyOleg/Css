@@ -1,8 +1,12 @@
 @mixin znak-sprite-n {
   .znak-sprite-n {
+    top: 16px;
+    right:100%;
     display: inline-block;
+    position: absolute;
+    background-color: $background-color;
     z-index: 2;
-    width: 16px;
+    width: 17px;
     height: 23px;
     @include znak-sprite-sprites(n);
   }
