@@ -1,24 +1,31 @@
 footer {
-  margin-top: 126px; 
-  font-weight: 600;
+  @include margin-leader(6);
+  font-family: "raleway-bold-webfont", "Helvetica Neue";
+  @include adjust-font-size-to(25px, $lines: 1.1);
+  font-weight: 400;
   color: white;
   background-color: $green;
   border-top: 3px $orange solid;
-  padding: 20px 80px 20px 80px;
+  
   .wrapper{
     @include outerRow;
   } 
 }
-dt {
-  vertical-align: top;
-  display: inline-block;
-  width: 50%;
-  clear: both;
-}
-dd {
-  text-align: right;
-  width: 49%;
-  vertical-align: top;
-  display: inline-block;
-  clear: both;
+dl{
+  @include margin-trailer(1);
+  @include margin-leader(1); 
+  dt {
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    clear: both;
+    text-align: left;
+  }
+  dd {
+    text-align: right;
+    width: 49%;
+    vertical-align: top;
+    display: inline-block;
+    clear: both;
+  }
 }

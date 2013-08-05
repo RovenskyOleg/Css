@@ -1,25 +1,26 @@
 .introduce{  
     @include outerRow;
     @include margin-leader(3); 
-    border-bottom: 3px $green solid;
   }
   #photo{
     @include column(12, collapse);
-    background-color: #00BFFF;
     .img{
       @include column(8);
       background-image: image-url("pic-intro.png");
-      min-height: 438px;
+      min-height: 427px;
+      border-bottom: 3px $green solid;
     }
     .text{
       @include column(4);
+      @include adjust-font-size-to(22px, $lines: 1.4);
+      border-bottom: 3px $green solid;
       background-color: $orange;
-      font-family: Raleway, "Helvetica Neue";
-      @include adjust-font-size-to(22px, $lines: 1.27);
+      font-family: "raleway-light-webfont", "Helvetica Neue";
+      font-weight: 100;
+      padding: 0 30px 0 15px;
       color: white;
-      min-height: 436px;
       p{
-        @include rhythm($padding-leader: 1, $padding-trailer: 1);
+        @include rhythm($padding-leader: 1, $padding-trailer: 0.9);
       }
     }
   }

@@ -1,13 +1,24 @@
 @import "compass";
+@import "mixins/size";
+@import "mixins/znak-sprite-k";
+@import "mixins/znak-sprite-n";
+
 @import "foundation-grid";
 @import "fonts";
 
+@import "znak-sprite/*.png";
+@include all-znak-sprite-sprites;
+
+$background-color: #80e0f2;
 $violet: #9189ff;
-$violet-new: #7500a7;
+$violet-new: #8f00a5;
 $orange: #e05d41;
 $light-orange: #cd8376;
 $green: #7aa700;
 $volna: #0cf389;
+$normal-btn: #0cf389;
+$active-btn: #0acc72;
+$line-forms-color: #9efad0;
 
 $rowWidth: 960px;
 $columnGutter: 3px;
@@ -15,6 +26,8 @@ $totalColumns: 12;
 
 $base-font-size: 14px;
 $base-line-height: 20px;
+$per-row: false;
+$base-style: true;
 
 @include global-reset;
 @include establish-baseline;
@@ -25,6 +38,5 @@ $base-line-height: 20px;
 @import "modules/footer";
 @import "modules/introduce";
 @import "modules/conteiner";
-@import "modules/conteiner-JS";
 @import "modules/angels";
-@import "modules/mixin-block-decor-1";
+@import "components/component";

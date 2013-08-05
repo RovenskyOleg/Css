@@ -1,5 +1,5 @@
 body{
-  background-color: #80e0f2;
+  background-color: $background-color;
   font-family: "Raleway", "Helvetica Neue",Arial, sans-serif; 
 
 }
@@ -28,9 +28,11 @@ clear:both;
 #content{
   background: image-url("background.png") no-repeat;
   @include background-size(100% auto);
-
+  overflow: hidden;
+  *:before, *:after {
+  @include box-sizing(border-box);
+  }
 }
-  //@import 'modules/big-logo'; 
   .big-logo{}
 
   .introduce{}  
@@ -38,10 +40,19 @@ clear:both;
   .infoRoR{}
 
   .info-JS{
-    @include outerRow;  
-  }
-    .container{
-      //@include column(6);
-    }
+    @include outerRow; 
 
+    .intro-column{
+    display: block;
+    @include column(6);
+    .text-block{
+      p{
+        @include rhythm($padding-leader: 1.7, $padding-trailer: 1);
+        
+      }
+    }
+  }
+
+  }
+ 
   .angels{}

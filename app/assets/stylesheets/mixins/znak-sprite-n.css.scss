@@ -1,0 +1,9 @@
+@mixin znak-sprite-n {
+  .znak-sprite-n {
+    display: inline-block;
+    z-index: 2;
+    width: 16px;
+    height: 23px;
+    @include znak-sprite-sprites(n);
+  }
+}

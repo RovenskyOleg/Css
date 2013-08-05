@@ -1,0 +1,23 @@
+%form.form
+  .main
+    %p.field
+      %label Name
+      %input{:name => "name", :placeholder => "name", :type => "text"}/
+    %p.field
+      %label Email
+      %input{:name => "email", :placeholder => "email", :type => "text"}
+    
+  .radio-button
+    .block-radio
+      %input#r1{:checked => "", :name => "myradio", :type => "radio", :value => "male"}
+      %label{:for => "r1"}
+        %span>
+        Kyiv
+      %input#r2{:name => "myradio", :type => "radio", :value => "male"}        
+      %label{:for => "r2"}
+        %span>
+        Dnipropetrovs'k
+  .btn
+    .block-btn
+      %button
+        %span Send

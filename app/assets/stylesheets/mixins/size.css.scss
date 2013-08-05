@@ -1,0 +1,7 @@
+@mixin size-deco-block($height, $width, $color-number) {
+  height: $height;
+  width: $width;
+  background-color: $color-number;
+  @include inline-block;
+  position: absolute;
+}

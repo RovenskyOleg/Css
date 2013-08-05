@@ -1,0 +1,105 @@
+.component{
+  background-color: $violet-new;
+  border-bottom: 3px $volna solid;
+  color: white;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  @include rhythm($padding-leader: 1, $padding-trailer: 1.2);
+    .title-form{
+      p{
+        font-family: "raleway-SemiBold", "Helvetica Neue";
+        @include adjust-font-size-to(25px, $lines: 1.3);
+        font-weight:500;
+        @include padding-trailer(0.7);
+      }
+    }
+   .block-form{
+      form.form{
+        position: relative;
+        .main {
+          float:left;
+          width: 100%;
+          p {
+            @include padding-trailer(1.1);
+          }
+          .field{
+            clear:both; text-align:right;
+            label{
+              float:left;
+              @include padding-leader(0);
+              @include adjust-font-size-to(25px, $lines: 2);
+              font-family: "rraleway-SemiBold", "Helvetica Neue";
+              font-weight: 100;
+            }
+            input{
+              border-bottom: 3px solid white;
+              @include adjust-font-size-to(25px, $lines: 2);
+              outline: none;
+              margin-right: 14%;
+              width: 61%;
+              &:hover, &.active{
+                border-bottom: 3px solid $line-forms-color; 
+              }
+            } 
+          }
+        }
+        .radio-button {
+          @include padding-trailer(1.1);
+          float:left;
+          width: 100%;
+          .block-radio{
+            width: 100%;
+            padding-left: 26%;
+          }
+            input[type="radio"] {
+              display:none;
+            }
+            input[type="radio"] + label {
+              padding-left: 5px;
+              color:#f2f2f2;
+              @include adjust-font-size-to(20px, $lines: 1);          
+            }
+            input[type="radio"] + label span {          
+              display:inline-block;
+              width:19px;
+              height:19px;
+              vertical-align:middle;
+              background:url(check_radio_sheet.png) -38px top no-repeat;
+              cursor:pointer;
+            }
+            input[type="radio"]:checked + label span {
+              background:url(check_radio_sheet.png) -57px top no-repeat;
+            }
+
+          }
+
+        .btn{
+          width: 100%;
+          .block-btn{
+            padding: 0 0 0 55%;
+            button{
+              font-family: "raleway-SemiBold", "Helvetica Neue";
+              @include adjust-font-size-to(25px, $lines: 2);
+              border: none;
+              font-weight: 500; 
+              text-decoration: none;
+              display: inline;
+              text-align: center;
+              color: #7500a7;                   
+              background-color: $normal-btn;
+              border-bottom: 3px solid $normal-btn;
+              padding-right:15%; 
+              padding-left:15%;
+              &:hover, &:active{
+                background-color: $active-btn;
+                border-bottom: 3px solid $orange; 
+              }
+            } 
+          }        
+        }
+    }
+  }
+}
+    
+  

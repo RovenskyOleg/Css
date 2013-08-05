@@ -4,21 +4,24 @@
   #big-logo{
     @include column(4);
     @include push(4);
+    @include padding-leader(3);
+    @include padding-trailer(2.5);
     .img {
       background-image: image-url("big-logo.png");
+      background-repeat: no-repeat;
       height: 206px;
       margin: 0 auto;
       display: block;
-      @include margin-leader(2.5); 
     }
   }
-  .title-little{
+  #title-little{
+    @include push(2);
+    @include column(10);
     h2 {
-      display: block;
-      @include push(2);
-      @include column(10);
+      display: inline-block;
       @include adjust-font-size-to(40px, 2);
-      font-family: Raleway, "Helvetica Neue";
-      @include padding-leader;
+      font-family: "raleway-light-webfont", "Helvetica Neue";
+      font-weight:200;
+      color: #232d3b;
     } 
   }

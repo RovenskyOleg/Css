@@ -2,7 +2,7 @@
   .logo
     #big-logo
       .img
-    .title-little
+    #title-little
       %h2="< it's about sharing knowledge >"
   .introduce
     #photo
@@ -11,16 +11,23 @@
         %p CodeAngels is a team of professional and experienced web developers who passionate about what they doing. and want to expand the boarders of IIT community in Ukraine. We share our knowledges by handling meetups and free courses for web developers.  If you're smart and curious person who loves coding. you should definitely visit our courses and events.
 .infoRoR
   .title
-    %h2 < Ruby/Ruby on Rails course >
-  .container
+    %h2
+      %span
+        .znak-sprite-n 
+        Ruby/Ruby on Rails course
+        .znak-sprite-k   
+    .line-max
+  .intro-column
     .text-block
       %p You'll learn everything you need to know about Ruby to be a productive programmer. And it'll take you a step further. You'll also learn Ruby design principles and techniques to help you become a better all-around Ruby programmer. You'll learn exactly how all the pieces go together, and you'll come away with the confidence that truly understand Ruby. Ruby on Rails is a breakthrough in lowering the barriers of entry to programming. Powerful web applications that formerly might have taken weeks or months to develop can be produced in a matter of days.
-    .clearfix
-    .con
-      %p Apply  
-      .img
-    .block-dicorate-1
-  .container-description
+    .apply-block
+      .closed  
+        %p Apply 
+        %input#go{:type => "submit", :onclick => "ApplyBlock()"}/
+      .block-dicorate-1
+
+
+  .description-column
     .description
       %p With the series of lections and practical workshops you will learn how to use such powerful tools  Ruby programming language and Ruby on Rails framework.
       .text-programm
@@ -37,22 +44,26 @@
     .block-dicorate-4
 .info-JS
   .title
-    %h2 < JavaScript on Rails course >
-  .container
+    %h2
+      %span
+        .znak-sprite-n 
+        JavaScript on Rails course
+        .znak-sprite-k 
+    .line-max
+  .intro-column
     .text-block
       %p You'll learn everything you need to know about JavaScript to be a productive programmer. You'll learn libraries and frameworks that will help you to build web applications quickly and efficiently. You will also know what should be done when things go wrong and you face the problem. It is critical to know how and why everything works. We'll demonstrate optimal ways to load code onto page, and show some tips that help you JavaScript run as efficiently and quickly as possible. You'll learn the best practices to build and deploy you files to production environment, and how to use tools that can rapidly help you to find out any problems once you put your site on a Web server.
-    .clearfix
-    .con
-      %p Participation request
-      .component
-        %participation-form
-          %label Name
-          %input{:name => "first", :type => "text"}
-          %br/
-          %label Email
-          %input{:name => "email", :type => "text"}
+    .apply-block
+      .expanded
+        .component
+          .title-form
+            %p Participation request
+          .block-form
+            =render 'form'
       .block-dicorate-1
-  .container-description
+      .block-dicorate-5
+      .block-dicorate-6
+  .description-column
     .description
       %p With the series of lections and practical workshops you will learn how to use such powerful tools as JavaScript programming language and JS frameworks and tips.
       .text-programm
@@ -63,23 +74,30 @@
         %dt &emsp;&emsp;> Testing JS applications (Jasmine, Mocha…)
         %dt &emsp;&emsp;> Speeding page loading time using varios techincs
         %dt &emsp;&emsp;> HTML and CSS basics
-    .block-dicorate-2
-    .block-dicorate-3
-    .block-dicorate-4
+    .block-dicorate-7
+    .block-dicorate-8
 .angels
   .title-angels
-    %h2 < Angels >
-  .conteiner-ang-1
-    #ang-1
-      .img1
-    #ang-2
-      .img2
-    #ang-3
-      .img3
-  .conteiner-ang-1
-    #ang-1
-      .img1
-    #ang-2
-      .img2
-    #ang-3
-      .img3        
+    %h2 
+      %span
+        .znak-sprite-n
+        Angels 
+        .znak-sprite-k 
+    .line-min
+  #item
+    .row
+      .large-12.columns
+        %ul.block-grid-3
+          %li
+            .img
+          %li
+            .img
+          %li
+            .img
+          %li
+            .img
+          %li
+            .img
+          %li
+            .img
+    

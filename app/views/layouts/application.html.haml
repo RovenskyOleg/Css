@@ -6,6 +6,10 @@
   = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
   = javascript_include_tag "application", "data-turbolinks-track" => true
   = csrf_meta_tags
+  :javascript
+      function ApplyBlock() {
+         document.write('Вы нажали на кнопку!');
+      }
 %body
   %header
     .wrapper
@@ -19,9 +23,8 @@
           %a{href: "#"}="Coaches"          
   #content
     = yield
-  //#clear
   %footer
     .wrapper
       %dl
-      %dt contact: info@rubygarage.org
-      %dd &copy; 2012-2013 RubyGarage 
+        %dt contact: info@rubygarage.org
+        %dd &copy; 2012-2013 RubyGarage 

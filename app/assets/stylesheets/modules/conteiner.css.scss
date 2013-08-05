@@ -1,108 +1,147 @@
 .infoRoR{
   @include outerRow;
-  }
-    .title{
-      @include margin-leader(5);
-      @include padding-trailer(3);
-    }
-      h2{
-        text-align: center;
-        font-family: Raleway, "Helvetica Neue";
-        font-size: 40px;
-        font-weight: medium;
-        color: $orange; 
+}  
+  .title{
+    @include margin-leader(5);
+    @include margin-trailer(3);
+    @include column(12);
+    h2{
+      text-align: center;
+      font-family: "raleway-Medium", "Helvetica Neue";
+      @include adjust-font-size-to(40px, $lines: 2);
+      font-weight: 300;
+      color: $orange; 
+      position: relative;
+      z-index: 9999;
+      @include znak-sprite-n;
+      span{
+        background: $background-color;
+        position: relative;
       }
-  .container{
-    @include column(6, collapse);
-    padding-right: 3px;
+      @include znak-sprite-k;
+    }
+    .line-max{
+      position: absolute;
+      top: 22px;
+      left:-13%;
+      border-bottom: 3px $orange solid;
+      width: 126%;
+      z-index: 1;
+    }
+  }
+  .intro-column{
+    display: block;
+    @include column(6);
     .text-block{
-      min-height: 460px;
-      display: block;
+      /*display: block;*/
       background-color: $green;
-      border-bottom: 3px $orange solid; 
-      margin-bottom: 3px;
+      border-bottom: 3px $orange solid;
       p{
         padding-left: 40px;
         padding-right: 40px;
-        @include rhythm($padding-leader: 1.5, $padding-trailer: 2);
+        @include rhythm($padding-leader: 1.7, $padding-trailer: 2.3);
         @include adjust-font-size-to(20px, $lines: 1.29);
         font-family: Raleway, "Helvetica Neue";
+        font-weight: 400;
       }
     }
-    .clearfix:after {
-      content: "";
-      display: block;
-      clear: both;
-    }
-    .con{
-      background-color: $violet-new;
-      border-bottom: 3px $volna solid;
-      color: white;
-      min-height: 177px;
-    }
-      .img{
-        display: block;
-        background-image: image-url("apply.png");
-        width: 69px;
-        height: 69px;
-        margin-left: auto;
-        margin-right: auto; 
+    .apply-block {
+      padding-top: 3px;
+      .closed {
+        background-color: $violet-new;
+        border-bottom: 3px $volna solid;
+        color: white;
+        position: relative; 
+        @include padding-leader(1);
+        @include padding-trailer(6.8);
+        p{
+          padding-left: 40px;
+          font-family: Raleway, "Helvetica Neue";
+          font-weight: 100;
+          @include adjust-font-size-to(25px, $lines: 1.3);
+          @include padding-trailer(0.5);
+        }
+        input#go {
+          @include push(5);
+          @include column(2);
+          display: inline-block;
+          border: none;
+          text-indent:-9999px;
+          line-height:0;
+          background-image: image-url("apply.jpg");
+          background-repeat: no-repeat;
+          width: 69px;
+          height: 69px;
+        }
       }
+      .expanded{
+        .component{}
+      }
+    }
   }
-  .container-description{
-    @include column(6, collapse);
+  .description-column{
+    @include column(6);
     .description{
-      max-height: 660px;
+      position: relative;
       background-color: $orange;
       color: white;
       border-bottom: 3px $green solid;
       font-family: Raleway, "Helvetica Neue";
-      @include adjust-font-size-to(20px, $lines: 1.1);
       padding-left: 40px;
       padding-right: 60px;
+      position: relative;
       p{
-       @include rhythm($padding-leader: 1.5, $padding-trailer: 0);
-     }
+        @include rhythm($padding-leader: 1.7, $padding-trailer: 1.7);
+        @include adjust-font-size-to(20px, $lines: 1.3);
+      }
       .text-programm{
-        @include rhythm($padding-leader: 1, $padding-trailer: 3);
+        @include adjust-font-size-to(20px, $lines: 1.5);
+        @include padding-trailer(3);
         dt{
           width: 100%;
-          @include adjust-leading-to(1.2);
-          @include padding-leader(0);
         }
       }  
     }
   }
-    .block-dicorate-1 {
-      //@include inline-block;
-      background-color: $orange;
-      position:absolute;
-      height: 100px;
-      width: 100px;
-      bottom: 0;
-      left: -103px;
-    }
+  .block-dicorate-1 {
+    @include size-deco-block(100px, 100px, $orange);
+    left: -102px;
+    bottom: 0;                               
+  }
+
   .block-dicorate-2{
-    background-color: $orange;
-    position:absolute;
-    height: 100px;
-    width: 100px;
+    @include size-deco-block(100px, 100px, $orange);
     right: -103px;
     top:0px;
   }
     .block-dicorate-3{
-      background-color: $orange;
-      position:absolute;
+      @include size-deco-block(100px, 100px, $orange);
       top: 103px;
-      height: 100px;
-      width: 100px;
       right: -103px;
     }
     .block-dicorate-4{
-      background-color: $light-orange;
-      position:absolute;
-      height: 100px;
-      width: 100px;
+      @include size-deco-block(100px, 100px, $light-orange);
       right: -206px;
       top:0px;
     }
+    .block-dicorate-5 {
+      @include size-deco-block(100px, 100px, $orange);
+      bottom: -103px;
+      left: -102px;
+    }
+    .block-dicorate-6 {
+      @include size-deco-block(100px, 100px, $orange);
+      bottom: -103px;
+      left: 1px;
+    }
+    .block-dicorate-7 {
+      @include size-deco-block(100px, 100px, $green);
+      bottom: -103px;
+      left: 1px;
+    }
+    .block-dicorate-8 {
+      @include size-deco-block(100px, 100px, $green);
+      bottom: -206px;
+      left: 1px;
+    }
+  
