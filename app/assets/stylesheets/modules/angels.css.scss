@@ -32,7 +32,7 @@
   }
 #item {
   ul {
-    @include block-grid(3);
+    @include block-grid(3, 4px, 0px);
   }
   li{
     .img {
