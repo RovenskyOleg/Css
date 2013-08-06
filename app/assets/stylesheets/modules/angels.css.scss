@@ -32,14 +32,26 @@
   }
 #item {
   ul {
-    @include block-grid(3, 4px, 0px);
+    @include block-grid(3, 4px, 4px);
   }
   li{
-    .img {
-      background-image: image-url("ang.png");
-      background-repeat: no-repeat;
-      height: 328px;
-      display: block;
+    .img-ang1 {
+      @include photo-angel("ang.png");
+    }
+    .img-ang2{
+      @include photo-angel("ang.png");
+    }
+    .img-ang3{
+      @include photo-angel("ang-2.png");
+    }
+    .img-ang4 {
+      @include photo-angel("ang.png");
+    }
+    .img-ang5{
+      @include photo-angel("ang-3.png");
+    }
+    .img-ang6{
+      @include photo-angel("ang.png");
     }
   }
 }
