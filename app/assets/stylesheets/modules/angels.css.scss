@@ -35,23 +35,84 @@
     @include block-grid(3, 4px, 4px);
   }
   li{
+    .img-ang1, .img-ang2, .img-ang3, .img-ang4, .img-ang5, .img-ang6, {position: relative;}
     .img-ang1 {
       @include photo-angel("ang.png");
+      border-bottom: 3px $orange solid;
+      &:hover, &:active{
+        .block{
+          display: inline-block;
+        }
+      }
+      .text{
+        p{
+          @include padding-trailer(0.4);
+          left: 10%;
+          color: $angels;
+          bottom: 0px;
+          position: absolute;
+          font-family: "raleway-bold-webfont", "Helvetica Neue";
+          font-weight: 300;
+          @include adjust-font-size-to(25px, $lines: 1.3);
+        }
+      }
+      .block{
+        display: none;
+        height: 328px;
+        width: 328px;
+        background-color: $green;
+        @include rhythm($padding-leader: 1, $padding-trailer: 1);
+        p{
+          display: inline-block;
+          font-family: "raleway-bold-webfont", "Helvetica Neue";
+          font-weight: 100;
+          @include adjust-font-size-to(20px, $lines: 1);
+        }
+      } 
     }
     .img-ang2{
       @include photo-angel("ang.png");
+      border-bottom: 3px $orange solid;
     }
     .img-ang3{
       @include photo-angel("ang-2.png");
+      border-left: 3px $orange solid;
+        .text{
+        p{
+          @include padding-trailer(0.4);
+          left: 10%;
+          color: $angels;
+          bottom: 0px;
+          position: absolute;
+          font-family: "raleway-bold-webfont", "Helvetica Neue";
+          font-weight: 300;
+          @include adjust-font-size-to(25px, $lines: 1.3);
+        } 
+      }
     }
     .img-ang4 {
       @include photo-angel("ang.png");
+      border-bottom: 3px $orange solid;
     }
     .img-ang5{
       @include photo-angel("ang-3.png");
+      border-bottom: 3px $orange solid;
+        .text{
+        p{
+          @include padding-trailer(0.4);
+          left: 10%;
+          color: $angels;
+          bottom: 0px;
+          position: absolute;
+          font-family: "raleway-bold-webfont", "Helvetica Neue";
+          font-weight: 300;
+          @include adjust-font-size-to(25px, $lines: 1.3);
+        } 
+      }
     }
     .img-ang6{
       @include photo-angel("ang.png");
+      border-bottom: 3px $orange solid;
     }
-  }
+  } 
 }
