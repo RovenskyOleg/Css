@@ -8,7 +8,7 @@ nav {
     text-decoration: none;
     @include padding-leader;
     @include padding-trailer;
-    &:hover, &.active{
+    &:hover, &:active{
       background-color: $orange;
       color: #fff;
     }
