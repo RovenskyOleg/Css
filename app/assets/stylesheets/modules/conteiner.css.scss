@@ -46,7 +46,7 @@
       }
     }
     .apply-block {
-      padding-top: 3px;
+      padding-top: 4px;
       .closed {
         background-color: $violet-new;
         border-bottom: 3px $volna solid;
@@ -111,13 +111,13 @@
 
   .block-dicorate-2{
     @include size-deco-block(100px, 100px, $orange);
-    right: -103px;
+    right: -102px;
     top:0px;
   }
     .block-dicorate-3{
       @include size-deco-block(100px, 100px, $orange);
-      top: 103px;
-      right: -103px;
+      top: 104px;
+      right: -102px;
     }
     .block-dicorate-4{
       @include size-deco-block(100px, 100px, $light-orange);
@@ -126,22 +126,22 @@
     }
     .block-dicorate-5 {
       @include size-deco-block(100px, 100px, $orange);
-      bottom: -103px;
+      bottom: -104px;
       left: -102px;
     }
     .block-dicorate-6 {
       @include size-deco-block(100px, 100px, $orange);
-      bottom: -103px;
-      left: 1px;
+      bottom: -104px;
+      left: 2px;
     }
     .block-dicorate-7 {
       @include size-deco-block(100px, 100px, $green);
-      bottom: -103px;
+      bottom: -104px;
       left: 2px;
     }
     .block-dicorate-8 {
       @include size-deco-block(100px, 100px, $green);
-      bottom: -206px;
+      bottom: -208px;
       left: 2px;
     }
   
