@@ -47,11 +47,10 @@ clear:both;
     @include column(6);
     .text-block{
       p{
-        @include rhythm($padding-leader: 1.7, $padding-trailer: 1);
-        
+        @include rhythm($padding-leader: 1.7, $padding-trailer: 1);   
       }
     }
-  }
+    }
 
   }
  

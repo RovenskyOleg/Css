@@ -1,5 +1,4 @@
 @import "compass";
-@import "mixins/photo-angel";
 @import "mixins/size";
 
 @import "mixins/znak-sprite-k";
@@ -11,11 +10,15 @@
 
 @import "znak-sprite/*.png";
 @include all-znak-sprite-sprites;
+@import "znak/*.png";
+@include all-znak-sprites;
 
 $background-color: #80e0f2;
+$border-image: #ebe5ab;
 $violet: #9189ff;
 $violet-new: #8f00a5;
 $orange: #e05d41;
+$orange-border-left: #e16947;
 $light-orange: #cd8376;
 $green: #7aa700;
 $volna: #0cf389;

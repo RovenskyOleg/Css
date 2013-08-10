@@ -30,75 +30,286 @@
       z-index: 1;
     }
   }
-#item {
+#block-grid-picture-angel {
+ 
   ul {
-    @include block-grid(3, 4px, 5px);
+    @include block-grid(3, 4px, 4px);
+    position: relative;
   }
-  li{
-    .angelImg {
+    li.angel-1{
       position: relative;
-      white:324px;
-      height: 331px;
-      display: block;
-      border:none;
-      border-bottom: 3px $orange solid;
-    }
-    .angelImg {
-
-      .name{
-        p{
-          @include padding-trailer(0.5);
-          left: 10%;
-          color: $angels;
-          bottom: 0px;
-          position: absolute;
-          font-family: "raleway-bold-webfont", "Helvetica Neue";
-          font-weight: 300;
-          @include adjust-font-size-to(25px, $lines: 1.3);
+      .img{
+        display: inline-block;
+       /* position: relative;*/
+        white:321px;
+        height: 331px;
+        border:none;
+        border-bottom: 3px $orange solid;
+        }
+        &:hover{
+          .description-angel-1{
+            display: inline-block;
+          }
+          .znack-direction-1 {
+            display: inline-block;
+          }
+          .znack-direction-1 {
+            display: inline-block;
+          }
         }
       }
-      .block{
-        padding-left: 328px;
+      .name-angel{
+          p{
+            @include padding-trailer(0.5);
+            left: 10%;
+            color: $angels;
+            bottom: 0px;
+            position: absolute;
+            font-family: "raleway-bold-webfont", "Helvetica Neue";
+            font-weight: 300;
+            @include adjust-font-size-to(25px, $lines: 1.3);
+          }
+        }
+      .znack-direction-1 {
         display: none;
-        height: 328px;
-        width: 328px;
+        position: absolute;
+        bottom: 20px;
+        left: 90%;        
+        width: 11px;
+        height: 15px;
+        z-index: 5000; 
+        @include znak-sprite(a);
+      }
+      .description-angel-1{
+        white-space: normal;
+        display: none;
+        position: absolute;
+        height: 331px;
+        width:323px;
         background-color: $green;
-        @include rhythm($padding-leader: 1, $padding-trailer: 1);
+        padding: 20px 40px; 
+        left: 99%;
+        top:0;
+        border-bottom: 3px $orange solid;
+        z-index: 4000;       
         p{
-          display: inline-block;
+          word-wrap: break-word;
           font-family: "raleway-light-webfont", "Helvetica Neue";
           font-weight: 100;
-          @include adjust-font-size-to(20px, $lines: 1);
+          @include adjust-font-size-to(20px, $lines: 1.5);
         }
-      } 
-    }
-    .angelImg{
-        .text{
-        p{
-          @include padding-trailer(0.4);
-          left: 10%;
-          color: $angels;
-          bottom: 0px;
-          position: absolute;
-          font-family: "raleway-bold-webfont", "Helvetica Neue";
-          font-weight: 300;
-          @include adjust-font-size-to(25px, $lines: 1.3);
-        } 
       }
-    }
-    .angelImg{
-      .text{
-        p{
-          @include padding-trailer(0.4);
-          left: 10%;
-          color: $angels;
-          bottom: 0px;
-          position: absolute;
-          font-family: "raleway-bold-webfont", "Helvetica Neue";
-          font-weight: 300;
-          @include adjust-font-size-to(25px, $lines: 1.3);
-        } 
+      li.angel-2{
+        position: relative;
+        .img{
+          display: inline-block;
+          position: relative;
+          white:321px;
+          height: 331px;
+          border:none;
+          border-bottom: 3px $orange solid;
+        }
+        &:hover{
+          .description-angel-2{
+            display: none;
+          }
+        }
       }
-    }  
-  } 
+      .name-angel{
+          p{
+            @include padding-trailer(0.5);
+            left: 10%;
+            color: $angels;
+            bottom: 0px;
+            position: absolute;
+            font-family: "raleway-bold-webfont", "Helvetica Neue";
+            font-weight: 300;
+            @include adjust-font-size-to(25px, $lines: 1.3);
+          }
+        }
+      
+      li.angel-3{
+        position: relative;
+        .img{
+          display: inline-block;
+          position: relative;
+          white:321px;
+          height: 331px;
+          border-left: 3px $border-image solid;
+          border-bottom: 3px $orange solid;
+        }
+        &:hover{
+          .img{
+            border: none;
+            border-left: 3px $orange-border-left solid;
+          }
+          .description-angel-3{
+            display: inline-block;
+            border-bottom: none;
+            border-left: 3px $orange-border-left solid;
+          }
+          .znack-direction-3 {
+            display: inline-block;
+          }
+        }
+      }
+      .name-angel{
+          p{
+            @include padding-trailer(0.5);
+            left: 10%;
+            color: $angels;
+            bottom: 0px;
+            position: absolute;
+            font-family: "raleway-bold-webfont", "Helvetica Neue";
+            font-weight: 300;
+            @include adjust-font-size-to(25px, $lines: 1.3);
+          }
+        }
+      .znack-direction-3 {
+        display: none;
+        position: absolute;
+        bottom: 20px;
+        left: 90%;        
+        width: 15px;
+        height: 11px;
+        z-index: 5000; 
+        @include znak-sprite(c);
+      }
+      .description-angel-3{
+        border: none;
+        white-space: normal;
+        display: none;
+        height: 341px;
+        width:319px;
+        background-color: $green;
+        padding:  20px 40px;
+        right: 0%;
+        top:0;
+        @include margin-leader(16.4);
+        @include margin-trailer(0);
+        position: absolute;
+        z-index: 4000;
+        p{  
+          font-family: "raleway-light-webfont", "Helvetica Neue";
+          font-weight: 100;
+          @include adjust-font-size-to(20px, $lines: 1.5);
+        }
+      }
+
+      li.angel-4{
+        position: relative;
+        .img{
+          display: inline-block;
+          position: relative;
+          white:321px;
+          height: 331px;
+          border:none;
+          border-bottom: 3px $orange solid;
+        }
+        &:hover{
+          .description-angel-4{
+            display: none;
+          }
+        }
+      }
+      .name-angel{
+          p{
+            @include padding-trailer(0.5);
+            left: 10%;
+            color: $angels;
+            bottom: 0px;
+            position: absolute;
+            font-family: "raleway-bold-webfont", "Helvetica Neue";
+            font-weight: 300;
+            @include adjust-font-size-to(25px, $lines: 1.3);
+          }
+        }
+      li.angel-5{
+        position: relative;
+        .img{
+          display: inline-block;
+          position: relative;
+          white:321px;
+          height: 331px;
+          border:none;
+          border-bottom: 3px $orange solid;
+        }
+        &:hover{
+          .description-angel-5{
+            display: inline-block;
+          }
+           .znack-direction-5 {
+            display: inline-block;
+          }
+        }
+      }
+      .name-angel{
+          p{
+            @include padding-trailer(0.5);
+            left: 10%;
+            color: $angels;
+            bottom: 0px;
+            position: absolute;
+            font-family: "raleway-bold-webfont", "Helvetica Neue";
+            font-weight: 300;
+            @include adjust-font-size-to(25px, $lines: 1.3);
+          }
+        }
+        .znack-direction-5 {
+          display: none;
+          position: absolute;
+          bottom: 20px;
+          left: 90%;        
+          width: 11px;
+          height: 15px;
+          z-index: 5000; 
+          @include znak-sprite(b);
+        }
+        .description-angel-5{
+          white-space: normal;
+          display: none;
+          background-color: $green;
+          height: 331px;
+          width:323px;
+          padding:  20px 40px;
+          left: -100%;
+          top:0;
+          position: absolute;
+          border-bottom: 3px $orange solid;
+          z-index: 4000;
+          p{ 
+            font-family: "raleway-light-webfont", "Helvetica Neue";
+            font-weight: 100;
+            @include adjust-font-size-to(20px, $lines: 1.5);
+          }
+        }
+
+      li.angel-6{
+        position: relative;
+        .img{
+          display: inline-block;
+          position: relative;
+          white:321px;
+          height: 331px;
+          border:none;
+          border-bottom: 3px $orange solid;
+        }
+        &:hover{
+          .description-angel-6{
+            display: none;
+          }
+        }
+      }
+      .name-angel{
+          p{
+            @include padding-trailer(0.5);
+            left: 10%;
+            color: $angels;
+            bottom: 0px;
+            position: absolute;
+            font-family: "raleway-bold-webfont", "Helvetica Neue";
+            font-weight: 300;
+            @include adjust-font-size-to(25px, $lines: 1.3);
+          }
+        }   
 }
