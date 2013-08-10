@@ -112,7 +112,9 @@
         &:hover{
           .description-angel-2{
             display: none;
-          }
+          }          
+          .znack-direction-2{
+          }  
         }
       }
       .name-angel{
@@ -127,7 +129,12 @@
             @include adjust-font-size-to(25px, $lines: 1.3);
           }
         }
-      
+      .znack-direction-2{
+      }  
+      .description-angel-2{
+        p{ 
+        }
+      } 
       li.angel-3{
         position: relative;
         .img{
@@ -210,6 +217,8 @@
           .description-angel-4{
             display: none;
           }
+          .znack-direction-4{
+          }  
         }
       }
       .name-angel{
@@ -224,6 +233,12 @@
             @include adjust-font-size-to(25px, $lines: 1.3);
           }
         }
+        .znack-direction-4{
+        }  
+        .description-angel-4{
+          p{ 
+          }
+        } 
       li.angel-5{
         position: relative;
         .img{
@@ -238,7 +253,7 @@
           .description-angel-5{
             display: inline-block;
           }
-           .znack-direction-5 {
+          .znack-direction-5 {
             display: inline-block;
           }
         }
@@ -298,6 +313,8 @@
           .description-angel-6{
             display: none;
           }
+          .znack-direction-6{
+          }
         }
       }
       .name-angel{
@@ -311,5 +328,11 @@
             font-weight: 300;
             @include adjust-font-size-to(25px, $lines: 1.3);
           }
-        }   
+        }
+        .znack-direction-6 {
+        }  
+        .description-angel-6{
+          p{ 
+          }
+        } 
 }
