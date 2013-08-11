@@ -83,7 +83,6 @@
             button{
               font-family: "raleway-SemiBold", "Helvetica Neue";
               @include adjust-font-size-to(25px);
-              border: none;
               font-weight: 500; 
               text-decoration: none;
               display: inline;
